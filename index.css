@@ -43,6 +43,10 @@ h1, h2, h3, p, button {
 
 button {
     margin-bottom: 20px;
+    background-color: darkred;
+    border: none;
+    padding: 5px;
+    
 }
 
 .bio {
