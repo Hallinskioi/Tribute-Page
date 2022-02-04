@@ -64,6 +64,10 @@ img {
     height: auto;
 }
 
+.video-gallery {
+    margin-bottom: 300px;
+}
+
 .vid-text, .image-g-text{
     padding: 10px;
     text-align: center;
