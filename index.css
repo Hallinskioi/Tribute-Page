@@ -1,0 +1,97 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: center;
+    min-height: 100%;
+    font-family: 'Comic Neue', cursive;
+}
+
+
+body {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(-125deg, #abbb20, #cc6cc4, #ffed4b, #ff08ea);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: purple;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header{
+    text-align: center;
+    margin-bottom: 30px;
+    background-color: darkgoldenrod;
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, p, button {
+    font-family: 'Comic Neue', cursive;
+}
+
+button {
+    margin-bottom: 20px;
+    background-color: darkred;
+    border: none;
+    padding: 5px;
+    
+}
+
+.bio {
+    background-color: darkgoldenrod;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+img {
+    height: auto;
+    width: 100%;
+    margin: 20px;
+}
+
+.video-gallery, .image-gallery {
+    background-color: darkgoldenrod;
+    margin: 20px;
+    height: auto;
+}
+
+.video-gallery {
+    margin-bottom: 300px;
+}
+
+.vid-text, .image-g-text{
+    padding: 10px;
+    text-align: center;
+}
+
+video {
+    object-fit: cover;
+    min-width: 100%;
+    min-height: 200px;
+    position: absolute;
+    max-width: 200%;
+  }
+
+footer {
+    margin-top: 100px;
+    background-color: darkgoldenrod;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}

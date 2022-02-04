@@ -3,29 +3,116 @@
     <head>
         <title>A Tribute Page</title>
         <meta lang="en">
-
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <script src="index.js"></script>
+        <link href="index.css" rel="stylesheet" >
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap" rel="stylesheet"> 
     </head>
     <body>
         <header>
-            <h1>A Tribute Page for Sir Tim Berners-Lee</h1>
-            <h2>(He made the World Wide Web!)</h2>
-            <button>Change</button>
-            <script></script>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h1>A Tribute Page for Sir Tim Berners-Lee</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12">
+                        <h2 id="made"></h2>
+                        <button onclick="Change();">What else did he make?</button>
+                    </div>
+                </div>
+            </div>
         </header>
         <main>
-            <div class="info">
-                <h3>Who is he?</h3>
-                <p>
-                    A bloke
-                </p>
-                <h3>When did he do it?</h3>
-                <p>
-                    In the past
-                </p>
+                <div class="container">
+                    <div class="bio">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="image">
+                                <img src="img/Sir_Tim_Berners-Lee_(cropped).jpg" alt="Sir Tim Berners-Lee">
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>D.O.B</h3>
+                            <p>
+                                8th June 1955
+                            </p>
+                            <h3>Current Age</h3>
+                            <p>
+                                66
+                            </p>
+                            <h3>About</h3>
+                            <p>
+                                Born in London, UK, Tim is the oldest of 4 children. After graduating in 1976 and joining CERN in 1980 he proposed the concept of hypertext. <br>
+                                In 1990 he built the first web browser and World Wide Web. He published his first website on the 20th of December 1990. It can be found 
+                                <a href="http://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank">here.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="container">
+                <div class="image-gallery">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="image-g-text">
+                                <h3>
+                                    Click the images to get another one of our boi.
+                                </h3>
+                                <p>
+                                    I found the first image on the net and I love it.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="images">
+                                <img src="img/tim-1.jpg" alt="" id="imagebox" width="auto" height="auto" onclick="imageChangeOnClick()">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="video-gallery">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="vid">
+                                <video src="vid/example2.mp4" controls muted autoplay loop width="420px"></video>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="vid-text">
+                                <h3>This is not a video about Tim Berners-Lee</h3>
+                                <p>
+                                    I tried to embed a youtube vid using iframe, however firefox blocks it by default and I couldn't find a good video to download. <br>
+                                    So instead look at this beach.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </div>
         </main>
         <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8">
+                        <p>Website made by Dan Smart. Check out my repo's <a href="https://github.com/Hallinskioi">here.</a></p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p>
+                            Hi cohort 2!
+                        </p>
+                    </div>
+                </div>
+            </div>
 
         </footer>
+        <script type="text/javascript">
+            Change();
+        </script>
     </body>
 </html>
